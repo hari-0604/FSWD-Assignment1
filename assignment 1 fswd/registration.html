@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="registration-form">
+    <h2>Registration</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a>.</p>
+  </div>
+  <style>
+.registration-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #51d59c;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.registration-form h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+.registration-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #0a0404;
+  color: #f4eeee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registration-form button[type="submit"]:hover {
+  background-color: #040101;
+}
+.registration-form p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.registration-form p a {
+  color: #1f13d0;
+  text-decoration: none;
+}
+
+.registration-form p a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</body>
+</html>
